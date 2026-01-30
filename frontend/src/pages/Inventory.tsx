@@ -1,4 +1,3 @@
-import React from 'react';
 import { Package, AlertTriangle, CheckCircle, RefreshCw } from 'lucide-react';
 
 const Inventory = () => {

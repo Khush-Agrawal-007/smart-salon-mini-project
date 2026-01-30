@@ -1,4 +1,3 @@
-import React from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell, Legend } from 'recharts';
 import { Brain, TrendingUp, Users, AlertOctagon } from 'lucide-react';
 
@@ -96,7 +95,7 @@ const Predictions = () => {
                                         paddingAngle={5}
                                         dataKey="value"
                                     >
-                                        {churnData.map((entry, index) => (
+                                        {churnData.map((_entry, index) => (
                                             <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                                         ))}
                                     </Pie>

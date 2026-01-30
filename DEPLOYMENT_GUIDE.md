@@ -70,7 +70,6 @@ Ensure your latest code is on GitHub. If you see your project at `https://github
     *   Scroll down to "Environment Variables".
     *   Click **"Add Environment Variable"**.
         *   Key: `MONGO_URL` | Value: (Paste your connection string from Step 2)
-        *   Key: `PORT` | Value: `10000`
 5.  **Deploy**:
     *   Click **"Create Web Service"**.
     *   Wait 2-3 minutes. You should see "Live" in green.

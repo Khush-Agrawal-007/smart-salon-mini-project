@@ -1,5 +1,4 @@
-import React from 'react';
-import { Star, Scissors, Zap, Award } from 'lucide-react';
+import { Scissors, Zap, Award } from 'lucide-react';
 
 const Staff = () => {
     // Hardcoded Showcase Data
