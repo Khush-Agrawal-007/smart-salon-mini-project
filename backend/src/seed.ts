@@ -7,11 +7,11 @@ import { Appointment } from './models/Appointment';
 
 dotenv.config();
 
-const MONGO_URL = process.env.MONGO_URL || 'mongodb://127.0.0.1:27017/smart-salon';
+const MONGO_URI = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/smart-salon';
 
 const seedDatabase = async () => {
     try {
-        await mongoose.connect(MONGO_URL);
+        await mongoose.connect(MONGO_URI);
         console.log('✅ Connected to MongoDB for Seeding');
 
         // 1. Clear Data
