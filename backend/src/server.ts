@@ -6,12 +6,12 @@ import app from './app';
 dotenv.config();
 
 const PORT = process.env.PORT || 5001;
-const MONGO_URI = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/smart-salon';
+const MONGO_URL = process.env.MONGO_URL || 'mongodb://127.0.0.1:27017/smart-salon';
 
 // Database Connection
-console.log(`[DEBUG] Attempting to connect to MongoDB at: ${MONGO_URI}`);
+console.log(`[DEBUG] Attempting to connect to MongoDB at: ${MONGO_URL}`);
 mongoose
-    .connect(MONGO_URI)
+    .connect(MONGO_URL)
     .then(() => {
         console.log('✅ MongoDB Connected Successfully');
         try {
