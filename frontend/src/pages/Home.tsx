@@ -1,4 +1,5 @@
 import BookingForm from '../components/BookingForm';
+import TargetCursor from '../components/TargetCursor';
 
 const Home = () => {
     return (
@@ -36,6 +37,13 @@ const Home = () => {
             <div>
                 <BookingForm />
             </div>
+
+            <TargetCursor
+                spinDuration={1.5}
+                hideDefaultCursor
+                parallaxOn
+                hoverDuration={0.4}
+            />
         </div>
     );
 };
